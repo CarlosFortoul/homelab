@@ -55,7 +55,7 @@ spec:
             items:
               - key: config.yaml
                 path: config.yaml
-___
+---
 
 apiVersion: v1
 kind: ConfigMap
