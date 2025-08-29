@@ -15,6 +15,9 @@ spec:
       containers:
         - name: cloudflared
           image: cloudflare/cloudflared:latest
+          env:
+            - name: TUNNEL_ORIGIN_CERT
+              value: /etc/cloudflared/cert.pem
           args:
             - tunnel
             - --config
