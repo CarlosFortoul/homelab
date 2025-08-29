@@ -17,7 +17,7 @@ spec:
           image: cloudflare/cloudflared:latest
           env:
             - name: TUNNEL_ORIGIN_CERT
-              value: /etc/cloudflared/creds
+              value: etc/cloudflare/creds/cert.pem
           args:
             - tunnel
             - --config
